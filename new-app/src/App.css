@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black
+}
+
+body {
+  border: 0pc;
+  padding: 0pc;
+
+
+  background-color: black;
+
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+}
+
+@media only screen and (min-width: 700px) {
+  .grid img {
+    width: 80%;
+    height: auto;
+  }
+
+  body {
+
+    background-color: black;
+
+
+  }
+}

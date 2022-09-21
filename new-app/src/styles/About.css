@@ -1,0 +1,34 @@
+.container h1 {
+    font-size: x-large;
+    margin: 1pc;
+    color: white;
+}
+
+.container h2 {
+    font-size: large;
+    margin: 1pc;
+    color: white;
+}
+
+.container p {
+    font-size: large;
+    margin: 1pc;
+    color: white;
+    text-align: center;
+}
+
+.container img {
+    width: 400px;
+    height: auto;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .grid img {
+        width: 80%;
+        height: auto;
+    }
+}
