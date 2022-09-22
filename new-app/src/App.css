@@ -8,19 +8,15 @@
   background-color: black
 }
 
-body {
-  border: 0pc;
-  padding: 0pc;
 
 
-  background-color: black;
-
-
+.h1 {
+  color: white;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(1fr, 12, 1fr);
 
 }
 

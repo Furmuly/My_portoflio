@@ -1,13 +1,17 @@
 .container h1 {
-    font-size: x-large;
+    font-size: 5 vw;
     margin: 1pc;
     color: white;
 }
 
 .container h2 {
-    font-size: large;
+    font-size: 3.0vh;
     margin: 1pc;
     color: white;
+}
+
+p {
+    font-size: 2vmin;
 }
 
 .container p {
@@ -18,7 +22,7 @@
 }
 
 .container img {
-    width: 400px;
+    width: 350px;
     height: auto;
 }
 

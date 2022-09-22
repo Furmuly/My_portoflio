@@ -1,11 +1,12 @@
 .footer {
     width: 100%;
+    height: auto;
     background: #757575;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 1pc;
-    align-self: end;
+
 
 }
 

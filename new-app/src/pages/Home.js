@@ -7,6 +7,7 @@ import DSC00706 from '../logo/DSC00706.jpg';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FileOpenIcon from '@mui/icons-material/FileOpen';
 import { ReactComponent as White } from '../logo/white.svg';
+import CV from '../logo/Nabila_Furmuly_CV_Informaticienne .pdf';
 
 
 function Logo(props) {
@@ -26,7 +27,7 @@ function Home() {
         <div className='home' >
             <div className='about'>
                 <img className="rounded-circle" src={DSC00706} alt="myPhoto" />
-                <h2>Hello <SignLanguageOutlinedIcon color="yellow" /> My name is Nabila</h2>
+                <h2>Hello <SignLanguageOutlinedIcon color="red" /> My name is Nabila</h2>
                 <div className='prompt'>
                     <p>I am  an IT(application development) apprentice. </p>
                 </div>
@@ -34,26 +35,32 @@ function Home() {
                 <div className='grid text-center'>
                     <div className='col'>
                         <GitHubIcon className='icon' fontSize='large' />
-                        <div className='col'><p>GitHub</p></div>
+                        <div className='col'>
+                            <a href='https://github.com/Furmuly'><p>GitHub</p></a>
+                        </div>
                     </div>
 
                     <div className='col'>
                         <LinkedInIcon color="primary" className='icon' fontSize='large' />
-                        <div className='col'><p>LinkedIn</p></div>
+                        <div className='col'>
+                            <a href="https://www.linkedin.com/in/nabila-furmuly"> <p>LinkedIn</p> </a></div>
                     </div>
 
                     <div className='col'>
                         <FileOpenIcon className='icon' fontSize='large' />
-                        <div className='col'><p>view CV</p></div>
+                        <div className='col'>
+                            <a href={CV} ><p>view CV</p></a>
+                        </div>
                     </div>
 
                     <div className='col'>
                         <White className="icon" />
-                        <div className='col'><p>Jobtrek</p></div>
+                        <div className='col'>
+                            <a href="https://jobtrek.ch/" ><p>Jobtrek</p></a></div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
 
 
 

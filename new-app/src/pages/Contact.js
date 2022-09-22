@@ -1,79 +1,70 @@
 //import { LineAxisOutlined } from '@mui/icons-material';
+import { Button, Input } from '@mui/material';
 import React from 'react';
-import axios from 'axios';
-import { Container, Row, Col } from "react-bootstrap";
+import '../styles/Contact.css';
+import { Form, TextArea } from 'semantic-ui-react';
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 
-function Contact() {
+
+const SERVICE_ID = "service_ug71nmr";
+const TEMPLATE_ID = "template_dhprmc5";
+const USER_ID = "bc_U7DNk4ego0txBc";
+
+const Contact = () => {
+
+    const handleOnSubmit = (e) => {
+        e.preventDefault();
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+            .then((result) => {
+                console.log(result.text);
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Message Sent Successfully'
+                })
+            }, (error) => {
+                console.log(error.text);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Ooops, something went wrong',
+                    text: error.text,
+                })
+            });
+        e.target.reset()
+    };
 
     return (
-        <Container>
+        <div className='Contact'>
+            <Form onSubmit={handleOnSubmit}>
+
+                <Form.Field
+                    id='form-input-control-email'
+                    control={Input}
+                    name='email'
+                    placeholder='Email...' required />
 
 
-            <div className="sec_sp">
-                <div lg="5" className="mb-5">
-                    <h3 className="color_sec py-4">Get in touch</h3>
-                    <address>
-                        <strong>Email:</strong>{" "}
-                        <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
-                            {contactConfig.YOUR_EMAIL}
-                        </a>
-                        <br />
-                        <br />
-                        {contactConfig.hasOwnProperty("076 802 23 23") ? (
-                            <p>
-                                <strong>Phone:</strong> {contactConfig.YOUR_FONE}
-                            </p>
-                        ) : (
-                            ""
-                        )}
-                    </address>
-                    <p>{contactConfig.description}</p>
-                </div>
-                <div lg="7" className="d-flex align-items-center">
-                    <form className="contact__form w-100">
-                        <div>
-                            <div lg="6" className="form-group">
-                                <input
-                                    className="form-control"
-                                    id="name"
-                                    name="name"
-                                    placeholder="Name"
-                                    type="text"
-                                    required
-                                />
-                            </div>
-                            <div lg="6" className="form-group">
-                                <input
-                                    className="form-control rounded-0"
-                                    id="email"
-                                    name="email"
-                                    placeholder="Email"
-                                    type="email"
-                                    required
-                                />
-                            </div>
-                        </div>
-                        <textarea
-                            className="form-control rounded-0"
-                            id="message"
-                            name="message"
-                            placeholder="Message"
-                            rows="5"
-                            required
-                        ></textarea>
-                        <br />
-                        <div>
-                            <div lg="12" className="form-group">
-                                <button className="btn ac_btn" type="submit">
-                                    Send
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </Container>
-    );
+                <Form.Field id='form-input-control-last-name'
+                    control={Input}
+                    name='from_name' placeholder='Name...'
+                    required />
+
+
+                <Form.Field id='form-input-control-subject'
+                    control={Input}
+                    name='subject' placeholder='Subject...'
+                    required />
+
+
+
+                <Form.Field id='form-textarea-control-opinion'
+                    control={TextArea}
+                    name='message' placeholder='Message...'
+                    required />
+                <Button type='submit' >Submit</Button>
+            </Form>
+        </div>
+    )
 }
 
 

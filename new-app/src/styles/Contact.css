@@ -1,0 +1,21 @@
+.Contact {
+    border: 5vw;
+    width: 70%;
+    align-self: center;
+
+
+}
+
+Form {
+    border: 0.5vw solid white;
+    border-radius: 1vw;
+    padding: 5vw;
+    margin: 2vw;
+    background-color: white;
+
+
+}
+
+.placeholder {
+    color: white;
+}

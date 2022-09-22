@@ -4,11 +4,11 @@
 }
 
 .nav-links {
-    width: 70%;
+    width: 80%;
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     color: white;
 }
 
@@ -17,7 +17,7 @@
     color: white;
     text-decoration: none;
     font-size: 25px;
-    margin: 1pc;
+    margin: 1vw;
 }
 
 .toggleButton {
@@ -44,16 +44,22 @@
     height: 60vh;
 }
 
-#open #open .nav-links {
+#open .nav-links {
     flex-direction: column;
     justify-content: flex-start;
 
+}
+
+#open #open svg {
+    image-rendering: auto;
 }
 
 #open a {
     width: 100%;
     text-align: center;
 }
+
+
 
 
 @media only screen and (max-width: 900px) {
