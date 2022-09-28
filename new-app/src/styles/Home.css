@@ -10,18 +10,34 @@
 
 .grid {
     display: grid;
-    grid-gap: 4vw;
+    column-gap: 5vw;
     align-items: center;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
+    flex-direction: column;
+
 
 }
 
-.cols {
-    grid-column: span 1 /12;
-    background-color: black;
+.about-grid {
+    display: grid;
+    grid-gap: 1vw;
+    align-items: center;
     justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    flex-direction: row;
+
+
+}
+
+
+
+.cols {
+    grid-column: span 4 /12;
+    justify-content: center;
+
 
 }
 
@@ -66,10 +82,7 @@
 
 .about img {
     width: 25%;
-    height: auto;
     padding: 1pc;
-
-
 }
 
 
@@ -91,8 +104,18 @@
         padding: 0pc;
     }
 
+    .grid {
+        display: grid;
+        grid-gap: 2svw;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+        flex-direction: column;
+
+
+    }
+
 
 
 }
-
-@media only screen and (min-width: 600px) {}

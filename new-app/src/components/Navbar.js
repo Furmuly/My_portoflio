@@ -28,7 +28,7 @@ function Navbar() {
             </div>
             <header className="d-flex flex-wrap justify-content-center py-3 mb-4 ">
                 <a href="/">
-                    <Mylogo />
+                    <Mylogo className="rounded-circle" />
                 </a>
                 <div className='nav-links'>
                     <Link to={"/"}> Home </Link>

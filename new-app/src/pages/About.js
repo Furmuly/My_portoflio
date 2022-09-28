@@ -1,26 +1,25 @@
 import React from 'react';
 import "../styles/About.css";
 import Myimg from "../logo/MyImg.jpg";
-import { Grid } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
+//import { Grid } from '@mui/material';
+//import { useTheme } from '@mui/material/styles';
+//import Box from '@mui/material/Box';
+//import CssBaseline from '@mui/material/CssBaseline';
 
-import Container from '@mui/material/Container';
+
 
 
 function About() {
     return (
 
-        <div className='container  bd-grid'>
-            <div className='col'>
+        <div className='container'>
+            <div className='title'>
                 <h1>About Me</h1>
-                <div className='col-sm-6'>
-                    <div className='my_img'>
+                <div className='About-grid text-center'>
+                    <div className='col'>
                         <img src={Myimg} className="img-thumbnail" alt="my img" />
                     </div>
-
-                    <div className='col-sm-6'>
+                    <div className='col'>
                         <h2> I'am Nabila </h2>
                         <p>Thank you for your time and interest!
                             Curiosity (the desire to Know) is the search engine that brings us to wonderful and unimaginable places,
@@ -32,6 +31,7 @@ function About() {
                 </div>
             </div>
         </div>
+
     )
 }
 

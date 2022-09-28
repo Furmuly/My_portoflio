@@ -1,7 +1,6 @@
 .footer {
     width: 100%;
     height: auto;
-    background: #757575;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -16,6 +15,7 @@
     font-size: 70px;
     cursor: pointer;
 }
+
 
 .footer p {
     color: white;

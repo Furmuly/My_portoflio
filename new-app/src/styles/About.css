@@ -1,38 +1,65 @@
 .container h1 {
-    font-size: 5 vw;
-    margin: 1pc;
+    margin: 2vw;
     color: white;
 }
 
-.container h2 {
-    font-size: 3.0vh;
-    margin: 1pc;
-    color: white;
+.About-grid {
+    display: grid;
+    grid-gap: 3vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+
 }
 
-p {
-    font-size: 2vmin;
+
+.About-grid h2 {
+    text-align: center;
+    color: white;
 }
 
 .container p {
-    font-size: large;
-    margin: 1pc;
+    font-size: 15px;
     color: white;
     text-align: center;
 }
 
-.container img {
-    width: 350px;
-    height: auto;
+
+.About-grid img {
+    width: 40%;
+    margin: 2vw;
+
 }
 
+@media only screen and (min-width: 900px) {
+
+    .About-grid {
+        display: grid;
+        grid-gap: 5vw;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
 
 
-
-
-@media only screen and (max-width: 600px) {
-    .grid img {
-        width: 80%;
-        height: auto;
     }
+
+    .About-grid p {
+        font-size: 24px;
+        color: white;
+        text-align: left;
+    }
+
+    .About-grid h2 {
+        margin-top: 2vw;
+        color: white;
+        text-align: left;
+    }
+
+    .About-grid img {
+        width: 90%;
+
+    }
+
 }

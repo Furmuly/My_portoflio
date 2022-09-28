@@ -8,8 +8,7 @@ function Footer() {
     return (
         <div className='footer'>
             <div className='socialMedia'>
-                <LinkedInIcon />
-                <GitHubIcon />
+
             </div>
             <p> &copy; 2022 Nabila.Furmuly </p>
         </div>

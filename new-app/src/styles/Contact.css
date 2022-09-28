@@ -1,21 +1,100 @@
 .Contact {
-    border: 5vw;
-    width: 70%;
-    align-self: center;
+    margin-top: 2vw;
+
+}
+
+.contact-grid {
+    width: 100%;
+    height: auto;
+    background: #757575;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: left;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+
+/* Contact form saperation from top text */
+.contact-grid .col1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Contact p {
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    color: white;
 
 
 }
+
+.contact-grid input {
+    font-size: medium;
+    margin: 1VW;
+
+}
+
+.contact-grid textarea {
+    font-size: medium;
+    margin: 1VW;
+
+}
+
+/*
+.slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: row;
+
+
+}
+*/
+
+
+
+Button {
+    background-color: purple;
+}
+
+
 
 Form {
-    border: 0.5vw solid white;
-    border-radius: 1vw;
-    padding: 5vw;
     margin: 2vw;
-    background-color: white;
-
-
 }
 
-.placeholder {
-    color: white;
+
+@media only screen and (max-width: 600px) {
+    .contact-grid .col1 {
+        display: grid;
+        grid-gap: 3vw;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: left;
+        flex-direction: column;
+        margin: 2vw;
+    }
+
+    .Contact p {
+        color: white;
+        font-size: small;
+    }
+
+    .contact-grid input {
+        font-size: small;
+    }
+
+    .contact-grid textarea {
+        font-size: small;
+    }
+
+
 }
