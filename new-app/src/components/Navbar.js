@@ -3,7 +3,11 @@ import React, { useEffect, useState } from 'react';
 //using the uselocation to show pages list in the burger menu when we click on it 
 import { Link, useLocation } from 'react-router-dom';
 import "../styles/Navbar.css";
-import { ReactComponent as Mylogo } from "../logo/mylogo.svg";
+import { ReactComponent as Mylogo } from "../photos/mylogo.svg";
+import Home from '../pages/Home';
+import About from '../pages/About';
+import Skills from '../pages/Skills';
+import Contact from '../pages/Contact';
 
 
 function Navbar() {

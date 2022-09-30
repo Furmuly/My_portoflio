@@ -6,8 +6,8 @@ import About from './pages/About';
 import Skills from './pages/Skills';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
@@ -15,8 +15,9 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
+        <ScrollToTop />
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' exact element={< Home />} />
           <Route path='/About' element={<About />} />
           <Route path='/Skills' element={<Skills />} />
           <Route path='/Contact' element={<Contact />} />

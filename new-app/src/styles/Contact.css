@@ -1,8 +1,37 @@
 .Contact {
-    margin-top: 2vw;
-
+    margin-top: 5vw;
 }
 
+/* Slider adjustement */
+
+.slide {
+    width: 100%;
+    height: auto;
+}
+
+.slide-container {
+    width: 90%;
+    margin: auto;
+}
+
+.each-slide span {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.each-slide>div {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+}
+
+
+
+/* cotact grid setup */
 .contact-grid {
     width: 100%;
     height: auto;
@@ -30,7 +59,7 @@
     font-size: medium;
     text-align: center;
     margin-bottom: 2vw;
-    margin-top: 2vw;
+    margin-top: 1vw;
     color: white;
 
 
@@ -48,19 +77,6 @@
 
 }
 
-/*
-.slide-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(1, 1fr);
-    flex-direction: row;
-
-
-}
-*/
-
-
 
 Button {
     background-color: purple;
@@ -69,10 +85,11 @@ Button {
 
 
 Form {
-    margin: 2vw;
+    margin-bottom: 1vw;
 }
 
 
+/* setup for the devices with small screen */
 @media only screen and (max-width: 600px) {
     .contact-grid .col1 {
         display: grid;
@@ -94,6 +111,20 @@ Form {
 
     .contact-grid textarea {
         font-size: small;
+    }
+
+
+}
+
+@media only screen and (min-width: 900px) {
+
+    .each-slide>div {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        height: 500px;
+        width: 500px;
     }
 
 

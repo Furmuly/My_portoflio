@@ -11,9 +11,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
-import joj from '../logo/joj.jpg';
-import sport from '../logo/sport.jpg';
-import { height } from '@mui/system';
+
 
 
 
@@ -23,23 +21,22 @@ const SERVICE_ID = "service_ug71nmr";
 const TEMPLATE_ID = "template_dhprmc5";
 const USER_ID = "bc_U7DNk4ego0txBc";
 
-
+/*image slider variable */
 const slideImages = [
     {
-        url: '../logo/joj.jpg',
-        caption: 'Slide 1'
+        url: '../Slide_photos/sport.jpg',
+        caption: ''
     },
 
     {
-        url: '../logo/sport.jpg',
-        caption: 'Slide 2'
+        url: '../Slide_photos/joj.jpg',
+        caption: ''
     },
 
 ];
 
-
 const Contact = () => {
-
+    //message handler variable to conect to mail.js //
     const handleOnSubmit = (e) => {
         e.preventDefault();
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
@@ -63,18 +60,20 @@ const Contact = () => {
     return (
         <div className='Contact'>
             <div className='slide-container'>
-                <Slide>
-                    {slideImages.map((slideImage, index) => (
-                        <div className="each-slide" key={index}>
-                            <div style={{ 'backgroundImage': `url(${slideImage.url})` }}>
-                                <span>{slideImage.caption}</span>
-                            </div>
-                        </div>
-                    ))}
-                </Slide>
                 <div className='col'>
-                    <p>They say knowledge is an endless ocean, indeed it’s and I have a long way to go,
-                        but without any thought also the courage, resilience, and motivation to get there,
+                    <Slide>
+                        {slideImages.map((slideImage, index) => (
+                            <div className="each-slide center img-thumbnail" key={index}>
+                                <div style={{ backgroundImage: `url(${slideImage.url})` }}>
+                                    <span>{slideImage.caption}</span>
+                                </div>
+                            </div>
+                        ))}
+                    </Slide>
+                </div>
+                <div className='col'>
+                    <p>They say knowledge is an endless ocean, indeed it’s, and I have a long way to go,
+                        but without any doubt have the courage, resilience, and motivation to get there,
                         I would like to thank you again for your valuable time and visiting my portfolio < SentimentSatisfiedAltIcon color="secondary" />  </p>
                 </div>
             </div>

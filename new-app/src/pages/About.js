@@ -1,6 +1,6 @@
 import React from 'react';
 import "../styles/About.css";
-import Myimg from "../logo/MyImg.jpg";
+import Myimg from '../photos/MyImg.jpg';
 //import { Grid } from '@mui/material';
 //import { useTheme } from '@mui/material/styles';
 //import Box from '@mui/material/Box';

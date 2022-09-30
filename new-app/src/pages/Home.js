@@ -3,11 +3,11 @@ import React from 'react';
 import SignLanguageOutlinedIcon from '@mui/icons-material/SignLanguageOutlined';
 import "../styles/Home.css";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import DSC00706 from '../logo/DSC00706.jpg';
+import DSC00706 from '../photos/DSC00706.jpg';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FileOpenIcon from '@mui/icons-material/FileOpen';
-import { ReactComponent as White } from '../logo/white.svg';
-import CV from '../logo/Nabila_Furmuly_CV_Informaticienne .pdf';
+import { ReactComponent as White } from '../photos/white.svg';
+import CV from '../photos/Nabila_Furmuly_CV_Informaticienne .pdf';
 
 
 //function Logo(props) {
