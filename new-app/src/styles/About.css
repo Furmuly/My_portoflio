@@ -42,7 +42,7 @@
 
     .About-grid {
         display: grid;
-        grid-gap: 5vw;
+        grid-gap: 10vw;
         align-items: center;
         justify-content: center;
         grid-template-columns: repeat(2, 1fr);
@@ -63,7 +63,7 @@
     }
 
     .About-grid img {
-        width: 80%;
+        width: 90%;
 
     }
 

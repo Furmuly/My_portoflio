@@ -7,7 +7,7 @@ import Skills from './pages/Skills';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import ScrollToTop from './components/ScrollToTop';
+//import Layout from './pages/Layout';
 
 
 function App() {
@@ -15,15 +15,13 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <ScrollToTop />
         <Routes>
-          <Route path='/' exact element={< Home />} />
+          <Route path='/' element={< Home />} />
           <Route path='/About' element={<About />} />
           <Route path='/Skills' element={<Skills />} />
           <Route path='/Contact' element={<Contact />} />
         </Routes>
       </Router>
-
     </div>
 
 

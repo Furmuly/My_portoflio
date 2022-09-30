@@ -11,6 +11,7 @@
 
 .slide-container {
     width: 90%;
+    height: 50%;
     margin: auto;
 }
 
@@ -21,14 +22,24 @@
 
 
 .each-slide>div {
-    display: inline-block;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     background-size: cover;
-    height: 300px;
-    width: 400px;
+    vertical-align: middle;
+    height: 400px;
+    width: 50%;
+
 }
 
+
+
+.slide {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 
 /* cotact grid setup */
@@ -116,15 +127,17 @@ Form {
 
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1900px) {
 
     .each-slide>div {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         background-size: cover;
-        height: 500px;
-        width: 500px;
+        height: 30vw;
+        width: 50%;
+
+
     }
 
 

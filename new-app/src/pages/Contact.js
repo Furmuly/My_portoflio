@@ -14,9 +14,6 @@ import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt
 
 
 
-
-
-
 const SERVICE_ID = "service_ug71nmr";
 const TEMPLATE_ID = "template_dhprmc5";
 const USER_ID = "bc_U7DNk4ego0txBc";
@@ -25,19 +22,22 @@ const USER_ID = "bc_U7DNk4ego0txBc";
 const slideImages = [
     {
         url: '../Slide_photos/sport.jpg',
-        caption: ''
     },
 
     {
         url: '../Slide_photos/joj.jpg',
-        caption: ''
     },
+
+    {
+        url: '../Slide_photos/game.jpg',
+    }
 
 ];
 
 const Contact = () => {
     //message handler variable to conect to mail.js //
     const handleOnSubmit = (e) => {
+
         e.preventDefault();
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
             .then((result) => {
@@ -63,9 +63,8 @@ const Contact = () => {
                 <div className='col'>
                     <Slide>
                         {slideImages.map((slideImage, index) => (
-                            <div className="each-slide center img-thumbnail" key={index}>
+                            <div className="each-slide img-thumbnail" key={index}>
                                 <div style={{ backgroundImage: `url(${slideImage.url})` }}>
-                                    <span>{slideImage.caption}</span>
                                 </div>
                             </div>
                         ))}
@@ -103,7 +102,7 @@ const Contact = () => {
                                 name='subject' placeholder='Subject...'
                                 required />
 
-                            <Form.Field id='form-textarea-control-opinion'
+                            <Form.Field id='form-textarea-control-message'
                                 control={TextArea} rows="3"
                                 name='message' placeholder='Message...'
                                 required />
@@ -132,7 +131,7 @@ const Contact = () => {
                 </div>
             </div>
         </div >
-    )
+    );
 }
 
 
