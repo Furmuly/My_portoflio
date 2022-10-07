@@ -1,21 +1,18 @@
 .App {
   text-align: center;
   background-color: black;
-  min-height: 120vh;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
 
-body {
-  background-color: black;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-.h1 {
-  color: white;
+@media only screen and (max-width: 900px) {
+
+  .App {
+    min-height: 100vh;
+  }
+
 }

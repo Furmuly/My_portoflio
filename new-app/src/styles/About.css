@@ -1,10 +1,16 @@
 .container {
     margin-bottom: 5vw;
     margin-top: 3vw;
+    text-emphasis-color: white;
 }
 
 .container h1 {
     margin: 2vw;
+    color: white;
+}
+
+.container h4 {
+    margin: 1vw;
     color: white;
 }
 
@@ -19,8 +25,20 @@
 
 }
 
+.About-me {
+    display: grid;
+    grid-gap: 5vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    margin-top: 5vw;
 
-.About-grid h2 {
+}
+
+
+.container h2 {
     text-align: center;
     color: white;
 }
@@ -42,7 +60,7 @@
 
     .About-grid {
         display: grid;
-        grid-gap: 10vw;
+        grid-gap: 5vw;
         align-items: center;
         justify-content: center;
         grid-template-columns: repeat(2, 1fr);
@@ -64,6 +82,18 @@
 
     .About-grid img {
         width: 90%;
+
+    }
+
+    .About-me {
+        display: grid;
+        grid-gap: 5vw;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        margin-top: 5vw;
 
     }
 

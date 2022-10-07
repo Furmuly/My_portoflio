@@ -22,8 +22,8 @@ import CV from '../photos/Nabila_Furmuly_CV_Informaticienne .pdf';
 // }
 
 function Home() {
-    //const GitHub = { icon: "GitHubIcon", href: "https://stackoverflow.com/questions/42914666/react-router-external-link", alt: "gitlogo", text: "GitHub" };
     return (
+        // My photo and then the icons with a link to my cv and social networks 
         <div className='home' >
             <div className='about'>
                 <div className='about-grid'>
@@ -58,19 +58,19 @@ function Home() {
 
                     <div className='title-grid' >
                         <div className='col'>
-                            <a href='https://github.com/Furmuly' ><p>GitHub </p></a></div>
+                            <a href='https://github.com/Furmuly' > GitHub </a></div>
                     </div>
 
                     <div className='col'>
-                        <a href="https://www.linkedin.com/in/nabila-furmuly"> <p>LinkedIn</p> </a>
+                        <a href="https://www.linkedin.com/in/nabila-furmuly"> LinkedIn </a>
                     </div>
 
                     <div className='col'>
-                        <a href={CV} ><p>view CV</p></a>
+                        <a href={CV} >view CV</a>
                     </div>
 
                     <div className='col'>
-                        <a href="https://jobtrek.ch/"><p>Jobtrek</p></a>
+                        <a href="https://jobtrek.ch/">Jobtrek</a>
                     </div>
 
                 </div>

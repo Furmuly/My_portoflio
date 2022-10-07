@@ -5,16 +5,17 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Skills from './pages/Skills';
 import Contact from './pages/Contact';
-import Navbar from './components/Navbar';
+//import Navbar from './components/Navbar';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-//import Layout from './pages/Layout';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Layout from './pages/Layout';
 
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Layout />
         <Routes>
           <Route path='/' element={< Home />} />
           <Route path='/About' element={<About />} />

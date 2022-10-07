@@ -1,22 +1,17 @@
 import { Reorder } from '@mui/icons-material';
 import React, { useEffect, useState } from 'react';
 //using the uselocation to show pages list in the burger menu when we click on it 
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import "../styles/Navbar.css";
 import { ReactComponent as Mylogo } from "../photos/mylogo.svg";
-import Home from '../pages/Home';
-import About from '../pages/About';
-import Skills from '../pages/Skills';
-import Contact from '../pages/Contact';
+import { Link } from "react-router-dom";
 
 
 function Navbar() {
     const [expandNavbar, setExpandNavbar] = useState(false);
-
     //sethig the navbar expend to false so when we click on one of the pages it closes the burger menu and show us the page 
     //uselocation helps to  know where in the application we are
     const location = useLocation();
-
     //using the useEffect to set the expandNavbar to false when the page changes 
     useEffect(() => {
         setExpandNavbar(false);
@@ -24,6 +19,7 @@ function Navbar() {
 
     return (
         //using id to open and close the expend the navbar 
+        //SetExpand Navbar prev bring as to the new chosen page and closes the burger menu 
         <div className='nav-container bd-grid' id={expandNavbar ? "open" : "close"}>
             <div className='toggleButton'>
                 <button onClick={() => { setExpandNavbar((prev) => !prev); }} >

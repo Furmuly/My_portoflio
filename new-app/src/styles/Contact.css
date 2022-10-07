@@ -4,20 +4,11 @@
 
 /* Slider adjustement */
 
-.slide {
-    width: 100%;
-    height: auto;
-}
 
 .slide-container {
     width: 90%;
-    height: 50%;
+    height: auto;
     margin: auto;
-}
-
-.each-slide span {
-    font-size: 20px;
-    text-align: center;
 }
 
 
@@ -25,35 +16,21 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
     background-size: cover;
     vertical-align: middle;
     height: 400px;
-    width: 50%;
+    width: 400px;
 
 }
 
 
-
-.slide {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+/* placing the Footer to the end of page */
+.contact Footer {
+    position: relative;
 }
 
 
-/* cotact grid setup */
-.contact-grid {
-    width: 100%;
-    height: auto;
-    background: #757575;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: left;
-    flex-direction: row;
-    align-items: flex-start;
 
-}
 
 
 /* Contact form saperation from top text */
@@ -100,7 +77,7 @@ Form {
 }
 
 
-/* setup for the devices with small screen */
+/* Setup for the devices with small screen */
 @media only screen and (max-width: 600px) {
     .contact-grid .col1 {
         display: grid;
@@ -109,6 +86,12 @@ Form {
         justify-content: left;
         flex-direction: column;
         margin: 2vw;
+    }
+
+    .each-slide>div {
+        height: 200px;
+        width: 200px;
+
     }
 
     .Contact p {
@@ -127,15 +110,17 @@ Form {
 
 }
 
-@media only screen and (min-width: 1900px) {
+/* Setup for devices with larger screen */
+
+@media only screen and (min-width: 1800px) {
 
     .each-slide>div {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         background-size: cover;
-        height: 30vw;
-        width: 50%;
+        height: 700px;
+        width: 700px;
 
 
     }
